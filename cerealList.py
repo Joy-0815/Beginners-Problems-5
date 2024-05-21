@@ -1,13 +1,9 @@
 cerealList = []
-food = True
 
-while food == True:
+while True:
     cereal = input("What is your favourite cereal?")
-    if cereal == "sultrana and bran":
+    if cereal == "sultrana and bran" or cereal == "weetbix":
         print(cerealList)
-        quit()
-    elif cereal == "weetbix":
-        print(cerealList)
-        quit()
+        break
     else:
         cerealList.append(cereal)
